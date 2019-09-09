@@ -1,0 +1,32 @@
+<?php
+include('login.php'); // Includes Login Script
+if(isset($_SESSION['login_user'])){
+header("location: profile.php"); // Redirecting To Profile Page
+}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SMART Inventory Management</title>
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css",>
+<style type="text/css">
+    @import url(style.css);
+</style>
+</head>
+<body>
+<center><div class="login">
+    <img class="icon-sinarmas" src="img/logosmart.png">
+    <form action= "" method="post">
+    <input id="name" type="text" name="username" class ="input" placeholder="Username ">
+    <input id="password" type="password" name="password" class = "input" placeholder="Password ">
+    <button name="submit" value=" Login " type="submit">Sign In</button>
+	<span><?php echo $error; ?> </span>
+    
+	</form>
+		
+    </div>
+</center>
+ 
+ 
+</body>
+</html>

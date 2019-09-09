@@ -1,0 +1,171 @@
+/*custom font*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+/*basic reset*/
+* {margin: 0; padding: 0;}
+
+html {
+	height: 100%;
+	/*Image only BG fallback*/
+	
+	/*background = gradient + image pattern combo*/
+	background-color: rgb(151, 151, 151);
+}
+@font-face {
+    src: url("font/Poppins-Light.ttf");
+    font-family: Poppins; }
+body {
+	font-family: montserrat, arial, verdana;
+}
+/*form styles*/
+.container{
+	position: absolute;
+    margin: auto;
+    top: 0px; left: 0px; right: 0px; bottom: 0px;
+    width: 60%;
+    height: 70%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.24), 0 6px 6px rgba(0, 0, 0, 0.23);	
+}
+.sub-container1 h1{
+    font-size: 19pt;
+    font-family: Poppins;
+    position: absolute;
+    top:40%;
+    left:8%;
+}
+.logo{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}   
+.sub-container1{
+    color:white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 45%;
+    background-image: url(img/stock.jpg);
+    background-size: cover;
+    border: none;
+    justify-content: center;
+}
+.sub-container2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 55%;
+    background-size: cover;
+    justify-content: center;
+}
+#msform {
+	color:rgb(78, 78, 78);
+	
+	width: 90%;
+	height: 95%;
+	margin: auto;
+    top: 0px; left: 0px; right: 0px; bottom: 0px;
+	text-align: center;
+	position: absolute;
+	justify-content: center;
+}
+#msform fieldset {
+	padding: 20px 30px;
+	width: 85%;
+	height: 90%;
+	position: absolute;
+	top: 0;
+	border: none;
+}
+
+#msform input::-webkit-input-placeholder{
+	color:#d4d4d4;
+	font-size: 10pt;
+	font-family: Poppins;
+
+}
+
+
+/*inputs*/
+
+
+.container-button{
+	background-color: transparent;
+	position:relative;
+	width: 50px;
+	height: 50px;
+	margin-bottom: -40px;
+}
+.container-button .btn{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 50px;
+	height:50px;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	border-radius: 100px;
+	
+}
+#msform .qty {
+	margin-top: 9px;
+	display: block;
+	width: 96.5%;
+	height: 30px;
+	border: none;
+	border-bottom: 2px solid rgba(0,0,0,0.2);
+	background-color: transparent;
+	color: black;
+	text-overflow: ellipsis;
+	border-radius: 0;
+}
+#msform .barcode{
+	display: block;
+	margin-bottom: 0px;
+	margin-left: 60px;
+	width: 80%;
+	height: 30px;
+	border: none;
+	border-bottom: 2px solid rgba(0,0,0,0.2);
+	background-color: transparent;
+	color: black;
+	border-radius: 0;
+}
+/*buttons*/
+#msform .action-button {
+	width: 100px;
+	background-color: transparent;
+	font-weight: bold;
+	color: #333;
+	border: 2px solid rgba(0,0,0,0.3);
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin-top: 15%;
+	font-family: montserrat, arial, verdana;
+}
+#msform .action-button:hover, #msform .action-button:focus {
+	border: none;
+	background-color: #cc0f0fa1;
+	transition: transform 3s ease-in-out;
+}
+
+#msform .qty:hover, #msform .barcode:hover {
+	border-bottom: 2px solid #cc0f0fcb;
+	transition: transform 1s ease-in-out;
+	padding: 5px 0;
+}
+/*headings*/
+.direction{
+	font-family: Poppins;
+	font-size:10pt;
+	margin-bottom: 20px
+}
+

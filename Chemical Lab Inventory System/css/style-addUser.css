@@ -1,0 +1,165 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color:#7c7c7c;
+  }
+  @font-face {
+    src: url("font/Poppins-Light.ttf");
+    font-family: Poppins; }
+.container{
+    position: absolute;
+    margin: auto;
+    top: 0px; left: 0px; right: 0px; bottom: 0px;
+    width: 70%;
+    height: 80%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.24), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.sub-container1{
+    color:#3a3a3a;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background-image: url(img/desk.jpg);
+    background-size: cover;
+    border-radius: 5px;
+    border: none;
+    justify-content: center;
+}
+img{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.sub-container1 h1{
+    font-size: 20pt;
+    font-family: Poppins;
+    position: absolute;
+    top:40%;
+    left:8%;
+    
+}
+
+.sub-container2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    justify-content:center;
+    text-align: center;
+}
+p{
+    margin-top: 35px;
+    font-family: Poppins;
+}
+hr{
+    width: 85%;
+}
+.login-form{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-align: center;
+    top: 40px;
+}
+form{
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    padding: 5px;
+    height: 220px;
+    width: 75%;
+}
+input{
+    transition: transform 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    font-size: 13px;
+    font-family: Poppins;
+    color: #7c7c7c;
+    width: 100%;
+    height: 23px;
+    background: transparent;
+    border: 1.5px solid #d1d1d1;
+    border-radius: 2px;
+    margin: 10px 0;
+    padding-left: 10%;
+    text-align: left;
+    background-repeat: no-repeat;
+    background-size: 20pt;
+    background-position: 1% center;
+
+}
+input.input1{
+    background-image: url(icon/use.svg)
+}
+input.input2{
+    background-image: url(icon/username.svg)
+}
+input.input3{
+    background-image: url(icon/psw.svg)
+}
+input.input4{
+    background-image: url(icon/repeat.svg)
+}
+input::placeholder{
+    font-family: Poppins;
+    color: rgba(196, 196, 196, 0.66);
+    font-size: 8pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+input:hover,
+        input:focus {
+            padding: 12px 0;
+            outline: 0;
+            border: 1px solid transparent;
+            border-bottom: 1px solid rgba(168, 18, 18, 0.747);
+            border-radius: 0;
+            background-position: 100% center;
+            transition: transform 1s ease-in-out;
+        }
+button{
+    border-radius : 50px;
+    text-align: center;
+    width: 50%;
+    height: 23px;
+    border : none;
+    cursor: pointer;
+    color : #3a3a3a;
+    background-color: transparent;
+    font-size : 11px;
+    font-family: poppins ;
+    margin-top: 30px;
+    transition: all 250ms ease-in-out;
+}
+button:hover{
+    background-color: rgba(168, 18, 18, 0.747);
+    color: white;
+    
+}
+select{
+    font-size: 13px;
+    font-family: Poppins;
+    color: #7c7c7c;
+    width: 100%;
+    height: 25px;
+    border: 1.5px solid #d1d1d1;
+    border-radius: 2px;
+    margin: 10px 0;
+    padding-left: 2%;
+    text-align: left;
+    background:transparent;
+}

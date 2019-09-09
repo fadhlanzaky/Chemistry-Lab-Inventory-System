@@ -1,0 +1,16 @@
+<svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="50" width="50" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect rx="3" stroke-width="0" stroke-linecap="round" stroke="#ffffff" fill="#200f60" id="svg_1" y="10.485829" x="7.18422" width="28" height="28" class="vi-primary"/>
+  <rect id="svg_6" height="0.242915" width="1.214573" y="22.675357" x="23.051618" stroke-opacity="null" stroke-width="null" stroke="null" fill="#ffffff"/>
+  <rect stroke="null" rx="2" id="svg_9" height="22.591059" width="22.833974" y="12.947385" x="9.569858" stroke-opacity="null" stroke-width="null" fill="#bbb24f"/>
+  <rect stroke="null" rx="2" id="svg_10" height="21.133571" width="21.133572" y="14.41626" x="11.148803" stroke-opacity="null" stroke-width="null" fill="#fbf4a5"/>
+  <rect stroke="null" rx="2" id="svg_5" height="19.433171" width="19.311713" y="14.416259" x="11.088074" stroke-opacity="null" stroke-width="null" fill="#ffffff"/>
+  <path stroke="null" fill-rule="evenodd" fill="#b46846" id="svg_2" d="m21.393836,25.742915l17.546566,0l-2.392714,3l1.595142,2l4.785427,-6l0,-1l-4.785427,-6l-1.595142,2l2.392714,3l-17.546566,0l0,3z" class="vi-accent"/>
+ </g>
+</svg>
