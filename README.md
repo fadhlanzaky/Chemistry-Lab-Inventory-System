@@ -13,6 +13,6 @@
 - Barcode Scanner: Fitur ini terdapat pada fitur Add New Material, Add Stock, dan Take Stock. Fungsi dari fitur ini adalah untuk membaca                      dan menginput Barcode dari Material sehingga user atau admin tidak perlu menginput manual.
   
   Tools yang saya gunakan untuk aplikasi ini adalah XAMPP dan MySQL. 
-  Untuk menggunakan aplikasi ini diperlukan format database yang sesuai yang sudah saya sertakan di repo.
+  Untuk menggunakan aplikasi ini diperlukan format database yang sesuai yang sudah saya sertakan di repo dan didalamnya telah ada contoh material yaitu "test" dan "test2".
   
   Keperluan Kerja Praktik
