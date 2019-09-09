@@ -1,0 +1,7 @@
+Admin:
+Username: admin
+Pass: admin
+
+User:
+Username: user1
+Pass: user1

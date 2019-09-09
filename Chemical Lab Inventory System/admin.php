@@ -24,6 +24,7 @@ require_once 'config.php';
     <title>Admin || Chemistry Lab Inventory System</title>
     <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.minb.css">
     <script src="js/jquery.js" type="text/javascript"></script>
 	<script src="js/bootstrap.min.js" type="text/javascript"></script>
     
@@ -199,7 +200,7 @@ require_once 'config.php';
 		$ans->execute();
 		$answ = $dbh -> prepare($sql3);
 		$answ->execute();
-		echo "<tr><td>&nbsp;".$row['no_id']."<br> ". $row['2nd_id']."</td><td><a href='details.php?no_id={$row['no_id']}';'>".$row['name']."</a></td><td>";while ($ansexp = $ans -> fetch()){echo $ansexp['exp_date'],"<br>";}; echo "</td><td>";while ($ansexp = $answ -> fetch()){echo $ansexp['stock'],"<br>";};echo "</td><td>".$row['last_stock']."</td><td>".$row['percentage']."</td></tr>";
+		echo "<tr><td>&nbsp;".$row['no_id']."</td><td><a href='details.php?no_id={$row['no_id']}';'>".$row['name']."</a></td><td>";while ($ansexp = $ans -> fetch()){echo $ansexp['exp_date'],"<br>";}; echo "</td><td>";while ($ansexp = $answ -> fetch()){echo $ansexp['stock'],"<br>";};echo "</td><td>".$row['last_stock']."</td><td>".$row['percentage']."</td></tr>";
 		endforeach;
 		echo "<tr><td></td><td></td><td></td><td></td><td>Avarage:</td><td>{$rowav['AveragePercentage']}</td></tr></table>";
 		

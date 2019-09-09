@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 09, 2019 at 09:10 AM
+-- Generation Time: Sep 09, 2019 at 11:32 AM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.3.2
 
@@ -44,6 +44,14 @@ CREATE TABLE `chemical_profile` (
   `qty` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `chemical_profile`
+--
+
+INSERT INTO `chemical_profile` (`no_id`, `2nd_id`, `name`, `nomat`, `brand`, `brand2`, `min_stock`, `unit`, `loc`, `user`, `last_date`, `act`, `qty`) VALUES
+('001', NULL, 'test', '222', 'FILMA', NULL, 3, 'btl', 'i9', 'admin', '2019-09-09 09:23:29', 'add', 1),
+('002', NULL, 'test2', '1234', 'test', NULL, 2, 'btl', 'i9', NULL, NULL, NULL, 0);
+
 -- --------------------------------------------------------
 
 --
@@ -57,6 +65,14 @@ CREATE TABLE `exp` (
   `exp_date` date DEFAULT NULL,
   `stock` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `exp`
+--
+
+INSERT INTO `exp` (`no_id`, `2nd_id`, `no`, `exp_date`, `stock`) VALUES
+('001', '', 35, '2020-01-01', '1'),
+('002', NULL, 36, '2019-08-08', '1');
 
 -- --------------------------------------------------------
 
@@ -74,6 +90,14 @@ CREATE TABLE `stock` (
   `percentage` int(11) DEFAULT NULL,
   `stat_stock` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `stock`
+--
+
+INSERT INTO `stock` (`no_id`, `2nd_id`, `first_stock`, `adding`, `take`, `last_stock`, `percentage`, `stat_stock`) VALUES
+('001', NULL, 2, 1, 2, 1, 33, 'Under Safe'),
+('002', NULL, 1, NULL, NULL, 1, 50, 'Expired');
 
 --
 -- Indexes for dumped tables
@@ -107,7 +131,7 @@ ALTER TABLE `stock`
 -- AUTO_INCREMENT for table `exp`
 --
 ALTER TABLE `exp`
-  MODIFY `no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
 -- Constraints for dumped tables

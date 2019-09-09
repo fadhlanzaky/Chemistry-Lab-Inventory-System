@@ -90,7 +90,7 @@ ini_set('display_errors', 0);
 		$ans->execute();
 		$answ = $dbh -> prepare($sql3);
 		$answ->execute();
-		echo "<tr><td>&nbsp;".$row["no_id"]."<br> ". $row['2nd_id']."</td><td>".$row['name']."</td><td>".$row['nomat']."</td><td>".$row['brand']."<br>".$row['brand2']."</td><td>".$row['loc']."</td><td>";while ($ansexp = $ans -> fetch()){echo $ansexp['exp_date'],"<br>";}; echo "</td><td>";while ($ansexp = $answ -> fetch()){echo $ansexp['stock'],"<br>";};echo "</td><td>".$row['min_stock']."</td><td>".$row['unit']."</td><td>".$row['first_stock']."</td><td>".$row['adding']."</td><td>".$row['take']."</td><td>".$row['last_stock']."</td><td>".$row['percentage']."</td><td>".$row['stat_stock']."</td></tr>";
+		echo "<tr><td>&nbsp;".$row["no_id"]."</td><td>".$row['name']."</td><td>".$row['nomat']."</td><td>".$row['brand']."<br>".$row['brand2']."</td><td>".$row['loc']."</td><td>";while ($ansexp = $ans -> fetch()){echo $ansexp['exp_date'],"<br>";}; echo "</td><td>";while ($ansexp = $answ -> fetch()){echo $ansexp['stock'],"<br>";};echo "</td><td>".$row['min_stock']."</td><td>".$row['unit']."</td><td>".$row['first_stock']."</td><td>".$row['adding']."</td><td>".$row['take']."</td><td>".$row['last_stock']."</td><td>".$row['percentage']."</td><td>".$row['stat_stock']."</td></tr>";
 		endforeach;
 		echo "<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><td></td></td><td></td><td>Avarage:</td><td>{$rowav['AveragePercentage']}</td><td></td></tr></table>";
 		
