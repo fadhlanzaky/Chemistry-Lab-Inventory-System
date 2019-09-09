@@ -14,3 +14,5 @@
   
   Tools yang saya gunakan untuk aplikasi ini adalah XAMPP dan MySQL. 
   Untuk menggunakan aplikasi ini diperlukan format database yang sesuai yang sudah saya sertakan di repo.
+  
+  Keperluan Kerja Praktik
