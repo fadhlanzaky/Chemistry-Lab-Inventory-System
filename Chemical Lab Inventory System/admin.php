@@ -24,7 +24,6 @@ require_once 'config.php';
     <title>Admin || Chemistry Lab Inventory System</title>
     <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.minb.css"> 
     <script src="js/jquery.js" type="text/javascript"></script>
 	<script src="js/bootstrap.min.js" type="text/javascript"></script>
     

@@ -1,0 +1,4 @@
+Bootstrap
+Jquery
+Quagga
+Modernizr
